@@ -1,0 +1,91 @@
+
+body{
+	background-image: url(../images/main_bcg_02.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; /* 重点二 */
+	overflow: auto;
+}
+#userHead{
+	position: absolute;
+	text-align: center;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+}
+#userHead,#loginIcon{
+	margin-right: 10px;
+	margin-left: 50px;
+	margin-bottom: -1px;
+	border-radius: 90px;
+	background-color: gray;
+	color: white;
+}
+a{
+	color: gray;
+	text-decoration: none;
+	transition: 0.5s;
+}
+a:hover{
+	background-color: gray;
+	color: white;
+}
+#apps{
+	/*background-color: purple;*/
+	/*height: 400px;*/
+}
+
+.showAPP{
+	background-color: transparent;
+	width: 50%;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+.showAPP:hover{
+	background-color: transparent;
+}
+
+.appImg{
+	margin: 10px;
+	height: 80px;
+	width: 80px;
+}
+.desOnimg{
+	margin-top: -10px;
+	margin-left: 10px;
+	text-align: center;
+	color: rgba(0,0,0,.5);
+	background-color: antiquewhite;
+	border-radius: 50px;
+	width: 80%;
+}
+footer{
+	text-align:center;
+
+}
+
+#menu{
+	display: none;
+}
+#toggle{
+	display: none;
+}
+
+
+
+
+
+#loginBlock{
+	display: block;
+	align-self: center;
+	width: 40%;
+}
+
+/*#userHead{*/
+/*	text-decoration: none;*/
+/*	background-color: rgba(0,0,0,0);*/
+/*	color: #e29797;*/
+
+/*}*/
+footer{
+	color: gray;
+}

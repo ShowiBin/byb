@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/login.css">
+	<link rel="stylesheet" media="(min-width:500px)" type="text/css" href="/static/css/my.css">
+	<link rel="stylesheet" media="(max-width:500px)" href="/static/css/my_mobile.css">
+	<title>LOGIN</title>
+    <style>
+        #loginBtn,#singUpBtn{
+            margin-top: 20px;
+        }
+        input{
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <a href="/home" class="">
+                    <img src="/static/images/logo.jpg">
+                </a>
+				<button id="menu">MENU</button>
+
+            </div>
+            <div id="links"><!--
+				<label for="toggle" id="toggleText">MENU</label>
+				<input type="checkbox" id="toggle"> -->
+				<ul class="nav navbar-nav navbar-left" id="basic_links">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">APPS</a></li>
+					<li><a href="#">BLOGS</a></li>
+					<li><a href="#">NEWS</a></li>
+					<li><a href="#">PROFUCTS</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">LEARN MORE</a></li>
+					<li><a href="/login" id="loginIcon">LOGIN</a></li>
+				</ul>
+			</div>
+
+        </div>
+    </div>
+
+    <div class="container " id="loginBlock">
+        <div id="singUpBlock" >
+            <div id="content"></div>
+        </div>
+        <form action="#" class="form-group">
+            <label for="" class="label">USERNAME:</label>
+            <input type="text" class="form-control" id="username" style="background-color: transparent;">
+        <br>
+            <label for="" class="label" id="pwd">PASSWORD:</label>
+            <input type="password" class="form-control"  id="pwdContent" style="background-color: transparent;">
+
+            <button class="btn btn-info btn-block" id="loginBtn">LOGIN</button>
+            <button class="btn btn-danger btn-block" id="singUpBtn">SING UP</button>
+        </form>
+    </div>
+    <br>
+    <footer >@copyright 机客公会@Showi小冰</footer>
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/vue/2.6.11/vue.js"></script>
+	<script src="/static/js/main_login.js"></script></body>
+	<script src="/static/js/login.js"></script></body>
+</html>

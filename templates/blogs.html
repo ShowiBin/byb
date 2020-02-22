@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/login.css">
+	<link rel="stylesheet" media="(min-width:500px)" type="text/css" href="/static/css/my.css">
+	<link rel="stylesheet" media="(max-width:500px)" href="/static/css/my_mobile.css">
+	<title>JikeHub_Blogs</title>
+    <style>
+        #loginBtn,#singUpBtn{
+            margin-top: 20px;
+        }
+        input{
+            background-color: transparent;
+        }
+        #text{
+            width: 100%;
+            height: 500px;
+            background-color: transparent;
+            color: antiquewhite;
+            font-size: medium;
+        }
+        #headText{
+            width: 100%;
+            height: 50px;
+            background-color: transparent;
+            color: antiquewhite;
+            font-size: medium;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <a href="/home" class="">
+                    <img src="/static/images/logo.jpg" alt="">
+                </a>
+
+				<button id="menu">MENU</button>
+
+            </div>
+            <div id="links"><!--
+				<label for="toggle" id="toggleText">MENU</label>
+				<input type="checkbox" id="toggle"> -->
+				<ul class="nav navbar-nav navbar-left" id="basic_links">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">APPS</a></li>
+					<li><a href="#">BLOGS</a></li>
+					<li><a href="#">NEWS</a></li>
+					<li><a href="#">PROFUCTS</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">LEARN MORE</a></li>
+					<li><a href="/login" id="loginIcon">LOGIN</a></li>
+				</ul>
+			</div>
+
+        </div>
+    </div>
+    <div class="container blogs">
+        <button id="textaeraToggle" style="border: 0;background-color: transparent;
+        color: antiquewhite;
+        font-size: 70px;">Writing My Blog</button>
+        <div class="container " id="head">
+            <textarea name="" id="headText" cols="30" rows="10" >writing the title here</textarea>
+        </div>
+        <div class="container " id="textarea">
+            <textarea name="" id="text" cols="30" rows="10" >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi impedit quaerat suscipit temporibus veniam. Dolores dolorum ea expedita illo natus officia! Dolorum fugiat laboriosam magni mollitia quasi reiciendis repellendus temporibus.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi impedit quaerat suscipit temporibus veniam. Dolores dolorum ea expedita illo natus officia! Dolorum fugiat laboriosam magni mollitia quasi reiciendis repellendus temporibus.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi impedit quaerat suscipit temporibus veniam. Dolores dolorum ea expedita illo natus officia! Dolorum fugiat laboriosam magni mollitia quasi reiciendis repellendus temporibus.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi impedit quaerat suscipit temporibus veniam. Dolores dolorum ea expedita illo natus officia! Dolorum fugiat laboriosam magni mollitia quasi reiciendis repellendus temporibus.
+            </textarea>
+            <button id="blogs_submit_btn" class="btn-block btn-danger" style="height: 50px;margin: 20px;margin-left: -3px;">SUBMIT BLOGS</button>
+        </div>
+            <div class="col-md-12" id="blogs">
+
+			<div class="panel panel-default panel-success" id="blogs-panel">
+
+				<div class="panel-heading">hot blogs</div>
+				<table class="table table-striped">
+					<tr id="firstBlog">
+						<td><a href="https://www.baidu.com/" class="link">小鸡鸡的致富之道</a></td>
+					</tr>
+
+				</table>
+				<div class="panel-footer"></div>
+			</div>
+		</div>
+
+    </div>
+
+    <br>
+    <footer style="position: relative;bottom:10px; ">@copyright 机客公会@Showi小冰</footer>
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/vue/2.6.11/vue.js"></script>
+	<script src="/static/js/main_blogs.js"></script>
+	<script src="/static/js/login.js"></script>
+</body>
+</html>
+

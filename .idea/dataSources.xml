@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="DB_for_DepartmentManager" uuid="78066ee7-1cb7-4ca4-802f-d872f4de50ed">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\27879\source\repos\CodeWorkSapce\HTML\learn\demo10_jikegonhui_plus\DB_for_DepartmentManager.db</jdbc-url>
+    </data-source>
+  </component>
+</project>
