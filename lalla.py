@@ -10,7 +10,7 @@ s = Sql.SqlOp()
 # AGE TEXT NOT NULL,
 # CONMENTS TEXT)
 # ''')//=============================================================
-# s.insert('USER',{'USERNAME':'Showi','NICKNAME':'Showi','PWD':'Showi666','AGE':'20'})
+# s.insert('USER',{'USERNAME':'Showi','NICKNAME':'Showi','PWD':'123123','AGE':'20'})
 
 # :param table_name: 数据库的名字
 #         :param kwargs: 可变参长度的参数,字典形式传入
