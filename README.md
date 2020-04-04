@@ -1,10 +1,9 @@
 # biaoyanbu
-no
-
 
 this is a web for 重庆交通大学表演部
 
-
+# by python flask
+...
 
 # intro:
 1.双击excute.bat就可以运行。
