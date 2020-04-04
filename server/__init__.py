@@ -2,6 +2,7 @@
 import sqlite3
 import requests
 from bs4 import BeautifulSoup
+import model.Sql as Sql
 
 import model.Sql as sql
 
@@ -12,22 +13,14 @@ class DataGet():
     def getBlogsData(self):
         '''Get the blogs.html data'''
         data = []
-        data.extend([
-            {'links': '/showi',
-             'content': 'Showi小冰:一切都有迹可循(狗头护体)'},
-            {'links': 'https://mp.weixin.qq.com/s/L0dlAT6NK5tHeSDtI-7DOg', 'content': '小姬姬:减3000还是减5000，在线砍价攻略，带你上戴尔砍价买电脑'},
-            {'links': 'https://mp.weixin.qq.com/s/m36OZ3TDVLJaNigY1xGAsw', 'content': '小姬姬:这是个装机必备的神器，不信？那你来看看'},
-            {'links': 'https://mp.weixin.qq.com/s/bF_8lvOA9seUDH_rJ5QXsQ', 'content': '小姬姬:快来白嫖免费的云电脑'},
-            {'links': 'https://mp.weixin.qq.com/s/L0KG0VVJ56eokglKqrby0w', 'content': '小姬姬:小机机又来用爱发电了'},
-            {'links': 'https://mp.weixin.qq.com/s/wm9OqT7G3xcvhIwLuSShvg', 'content': '小姬姬:又一款超级音乐神器，请收下'},
-            {'links': 'https://mp.weixin.qq.com/s/dMSpymfz2GgIY8iOeAmqkw', 'content': '小姬姬:知网研学平台免费使用攻略'},{'links': 'https://mp.weixin.qq.com/s/L0dlAT6NK5tHeSDtI-7DOg', 'content': '小姬姬:减3000还是减5000，在线砍价攻略，带你上戴尔砍价买电脑'},
-            {'links': 'https://mp.weixin.qq.com/s/m36OZ3TDVLJaNigY1xGAsw', 'content': '小姬姬:这是个装机必备的神器，不信？那你来看看'},
-            {'links': 'https://mp.weixin.qq.com/s/bF_8lvOA9seUDH_rJ5QXsQ', 'content': '小姬姬:快来白嫖免费的云电脑'},
-            {'links': 'https://mp.weixin.qq.com/s/L0KG0VVJ56eokglKqrby0w', 'content': '小姬姬:小机机又来用爱发电了'},
-            {'links': 'https://mp.weixin.qq.com/s/wm9OqT7G3xcvhIwLuSShvg', 'content': '小姬姬:又一款超级音乐神器，请收下'},
-            {'links': 'https://mp.weixin.qq.com/s/dMSpymfz2GgIY8iOeAmqkw', 'content': '小姬姬:知网研学平台免费使用攻略'}
-        ])
-        return str(data)
+        s = sql.SqlOp()
+        count = s.runSql('select count(*) from BLOGS')[0][0]
+        startCol = count - 15
+        data = s.select('BLOGS', 'id > ' + str(startCol))
+        copy = []
+        for i in data:
+            copy.append(list(i))
+        return str(copy).replace('None','"*"')
 
 
     def getAppdata(self):
@@ -85,6 +78,38 @@ class DataGet():
             i = i + 1
         return str(html)
 
+    def getEvents(self):
+        '''Get the events.html data'''
+        data = []
+        s = sql.SqlOp()
+        count = s.runSql('select count(*) from EVENTS')[0][0]
+        startCol = count - 15
+        data = s.select('EVENTS', 'id > ' + str(startCol))
+        copy = []
+        for i in data:
+            copy.append(list(i))
+        return str(copy).replace('None', '"*"')
+
+    def getAttendence(self):
+        '''Get the events.html data'''
+        data = []
+        s = sql.SqlOp()
+        data = s.select('ATTENDENCE')
+        copy = []
+        for i in data:
+            copy.append(list(i))
+        return str(copy).replace('None', '"*"')
+
+    def getMoney(self):
+        '''Get the money.html data'''
+        data = []
+        s = sql.SqlOp()
+        data = s.select('MONEY')
+        copy = []
+        for i in data:
+            copy.append(list(i))
+        return str(copy).replace('None', '"*"')
+
     def getData(self, data_name):
         '''get data by the request'''
         if(data_name == 'homeBlogData'):
@@ -92,8 +117,15 @@ class DataGet():
             return self.getBlogsData()
         elif(data_name=='app'):
             return self.getAppdata()
+        elif(data_name=='events'):
+            return self.getEvents()
         elif(data_name=='news'):
             return self.getNewsData()
+        elif(data_name=='attendence'):
+            return self.getAttendence()
+        elif(data_name=='money'):
+            return self.getMoney()
+
 
 #
 # a = DataGet()

@@ -6,16 +6,37 @@
 	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" media="(min-width:500px)" type="text/css" href="/static/css/my.css">
 	<link rel="stylesheet" media="(max-width:500px)" href="/static/css/my_mobile.css">
-	<title>机客公会  — 一起来搞把,兄弟</title>
+	<title>大学生艺术团表演部———为表演而生</title>
+
 </head>
 <body>
+{#<canvas id="cas"></canvas>#}
 <div class="all" id="all">
+    <p id="homeSentence" style="color: darkgrey">
+
+    </p>
+    <div>
+    <img class="navImg" src="/static/images/imgWall.jpg" alt="">
+    </div>
+    <div>
+        <img src="/static/images/imgWall_mobile.jpg" alt="" class="navImg_mobile">
+    </div>
+
+{#        <div id="img2">#}
+{#            <img class="navImg" src="/static/images/2.jpg" alt="">#}
+{#        </div>#}
+{#        <div id="img3">#}
+{#            <img class="navImg" src="/static/images/3.jpg" alt="">#}
+{#        </div>#}
+{#        <div id="img4">#}
+{#            <img class="navImg" src="/static/images/4.jpg" alt="">#}
+{#        </div>#}
 
 	<div class="container">
-		<div class="navbar navbar-inverse" id="nav">
+		<div class="navbar navbar-default" style="background-color: transparent;border: 0;" id="nav">
 			<div class="navbar-header">
 				<a href="/home" class="">
-					<img src="/static/images/logo.jpg">
+					<img id="logoImg" src="/static/images/logo.jpg">
 				</a>
 				<button id="menu">MENU</button>
 			</div>
@@ -23,100 +44,108 @@
 				<label for="toggle" id="toggleText">MENU</label>
 				<input type="checkbox" id="toggle"> -->
 				<ul class="nav navbar-nav navbar-left" id="basic_links">
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">APPS</a></li>
-					<li id=""><a href='#' class="btn-href" id="blogs_href">BLOGS</a></li>
-					<li><a href="#">NEWS</a></li>
-					<li><a href="#">PROFUCTS</a></li>
+					<li><a href="/home" >HOME</a></li>
+					<li><a href="/events">EVENTS</a></li>
+					<li id=""><a href='/blogs' class="btn-href" id="blogs_href">MESSAGE</a></li>
+					<li><a href="/products">PRODUCTS</a></li>
+					<li><a href="/showus">SHOWUS</a></li>
+					<li><a href="/DM">DM</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="/about">ABOUT</a></li>
-					<li><a href="#">LEARN MORE</a></li>
+					<li><a href="/learn_more">LEARN MORE</a></li>
 					<li><a href="/login" id="loginIcon">LOGIN</a></li>
                     <div id="sb"></div>
 				</ul>
 			</div>
-
-
 		</div>
 	</div>
+<a id="homeWelcome" href="/welcome" style="font-size: 30px;float: right;">加入我们</a>
      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    <embed wmode="transparent" src="/static/flash/02.swf" quality="high" bgcolor="#FDF6E3"  name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">    </div>
+    <embed wmode="transparent" src="/static/flash/01.swf" quality="high" bgcolor="#FDF6E3"  name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">    </div>
+{#<embed wmode="transparent" src="https://files.cnblogs.com/files/jingmoxukong/honehone_clock_tr.swf" quality="high" bgcolor="#FDF6E3" width="240" height="110" name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">#}
 {{ nickname }}
-    <div class="container">
-		<div class="label label-danger">Hot News</div>
-		<div class="list-group" style="background-color: transparent ">
-			<a class="list-group-item">Lorem ipsum dolor sit amet, consectetur </a>
-			<a class="list-group-item">Lorem ipsum dolor sit amet, consectetur </a>
-			<a class="list-group-item">Lorem ipsum dolor sit amet, consectetur </a>
-			<a class="list-group-item">Lorem ipsum dolor sit amet, consectetur </a>
-			<a class="list-group-item">Lorem ipsum dolor sit amet, consectetur </a>
-			<a class="list-group-item">Lorem ipsum dolor sit amet, consectetur </a>
-			<a class="list-group-item">Lorem ipsum dolor sit amet, consectetur </a>
-			<a class="list-group-item">Lorem ipsum dolor sit amet, consectetur </a>
-		</div>
-	</div>
 
-    <div class="container">
+
+
+    <div class="container" >
 	<div class="container" id="app-blogs">
 
-		<div class="col-md-5" id="blogs">
+		<div class="col-md-5" id="blogs" ·>
 
 			<div class="panel panel-default panel-danger" id="blogs-panel">
 
-				<div class="panel-heading">hot blogs</div>
+				<div class="panel-heading">Hot MESSAGE</div>
 				<table class="table table-striped">
 					<tr id="firstBlog">
-						<td><a href="https://www.baidu.com/" class="link">小鸡鸡的致富之道</a></td>
+						<td><a href="https://www.baidu.com/" class="link">交通致富之道</a></td>
 					</tr>
 
 				</table>
-				<div class="panel-footer"></div>
+				<div class="panel-footer" style="text-align: center">
+                    <a href="/blogs" >Getting more</a>
+                </div>
 			</div>
 		</div>
 
-		<div class="col-md-7" id="apps">
-			<div class="panel panel-default panel-danger">
-				<div class="panel-heading">Hot Apps</div>
-				<div class="panel-body" style="background-color: transparent;">
-					<div class="table">
-						<thead><tr><th></th><th></th><th></th></tr></thead>
-						<tbody>
-							<tr style="background-color: red;">
-                                <div id="row1"><div class=""></div></div>
+		<div class="col-md-7" id="events" ·>
 
-{#								<td><a  class="showAPP" href="https://www.wandoujia.com/apps/596157">#}
-{#                                    <img class="appImg" src="https://android-artworks.25pp.com/fs08/2019/12/02/11/106_7752066e7e198296d472e400922704d0_con_130x130.png"#}
-{#                                         alt="">#}
-{#                                </a></td>#}
-{##}
-{#								<td><div class="showAPP"></div></td>#}
-{##}
-{#								<td><div class="showAPP"></div></td>#}
-{##}
-{#								<td><div class="showAPP"></div></td>#}
-							</tr>
-							<tr>
-                                <div id="row2"><div class=""></div></div>
-							</tr>
-							<tr>
-                                <div id="row3"><div class=""></div></div>
-							</tr>
-{#							<tr>#}
-{#                                <div id="row4"><div class=""></div></div>#}
-{#							</tr>#}
-						</tbody>
-					</div>
-				</div>
-				<div class="panel-footer"></div>
+			<div class="panel panel-default panel-danger" id="blogs-panel">
+
+				<div class="panel-heading">Recent Events</div>
+				<table class="table table-striped">
+					<tr id="firstevents">
+						<td><a href="http://cpc.people.com.cn/" class="link">坚决跟党走，一切服从党的安排</a></td>
+					</tr>
+
+				</table>
+				<div class="panel-footer" style="text-align: center">
+                    <a href="/events" >Getting more</a>
+                </div>
 			</div>
 		</div>
+
+
 	</div>
 </div>
 
-	<footer >@copyright 机客公会@Showi小冰</footer>
+<footer >@copyright 大学生艺术团表演部<a href="/showi">@Showi小冰</a></footer>
 		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
 	<script src="https://cdn.bootcss.com/vue/2.6.11/vue.js"></script>
 	<script src="/static/js/main.js"></script>
+{#    <script type="text/javascript" src="/static/js/lzxg.js"></script>#}
+
+<script>
+    //home sentence
+home_sentense_timer = 0
+nowSentence = ''
+$('#homeSentence').text('大学生艺术团表演部欢迎您')
+
+sentence = ['Welcome',' ','To',' ','BioaYanBu',' ','Home']
+function home_sentence_show(){
+
+    console.log(home_sentense_timer)
+    if (home_sentense_timer < 7){
+        nowSentence +=sentence[home_sentense_timer]
+    }
+    else if(home_sentense_timer%7 == 0){
+        nowSentence = 'Welcome'
+    }
+    else{
+        nowSentence +=sentence[home_sentense_timer%7]
+    }
+    $('#homeSentence').text(nowSentence)
+    // setTimeout(home_sentence_show,500)
+    home_sentense_timer+=1
+
+}
+
+var lala = function(){
+    setInterval(home_sentence_show,500)
+}
+setTimeout(lala,2000)
+
+
+</script>
 </body>
 </html>

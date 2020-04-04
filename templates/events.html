@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/login.css">
+	<link rel="stylesheet" media="(min-width:500px)" type="text/css" href="/static/css/my.css">
+	<link rel="stylesheet" media="(max-width:500px)" href="/static/css/my_mobile.css">
+	<title>EVENTS</title>
+    <style>
+        #loginBtn,#singUpBtn{
+            margin-top: 20px;
+        }
+        input{
+            background-color: transparent;
+        }
+        #text{
+            width: 100%;
+            height: 200px;
+            background-color: transparent;
+            color: antiquewhite;
+            font-size: medium;
+        }
+        #headText{
+            width: 100%;
+            height: 50px;
+            background-color: transparent;
+            color: antiquewhite;
+            font-size: medium;
+
+        }
+        #logoImg{
+            width: 100px;
+            height: auto;
+        }
+        td{
+            max-width:100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <a href="/home" class="">
+                    <img src="/static/images/logo.jpg" alt="" id="logoImg" >
+                </a>
+
+				<button id="menu">MENU</button>
+
+            </div>
+            <div id="links"><!--
+				<label for="toggle" id="toggleText">MENU</label>
+				<input type="checkbox" id="toggle"> -->
+				<ul class="nav navbar-nav navbar-left" id="basic_links">
+					<li><a href="/home">HOME</a></li>
+					<li><a href="/events">EVENTS</a></li>
+					<li id=""><a href='/blogs' class="btn-href" id="blogs_href">MESSAGE_BOARD</a></li>
+					<li><a href="/products">PRODUCTS</a></li>
+					<li><a href="/showus">SHOWUS</a></li>
+					<li><a href="/DM">DM</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/about">ABOUT</a></li>
+					<li><a href="/learn_more">LEARN MORE</a></li>
+					<li><a href="/login" id="loginIcon">LOGIN</a></li>
+                    <div id="sb"></div>
+				</ul>
+			</div>
+
+        </div>
+    </div>
+    <div class="container blogs">
+        <button id="textaeraToggle" style="margin-left:15px;border: 0;background-color: transparent;
+        color: antiquewhite;
+        font-size: 70px;">Edit a new event</button>
+        <div class="container " id="head">
+            <textarea name="" id="headText" style="font-size: 20px;color: aqua">title</textarea>
+        </div>
+        <div class="container " id="textarea">
+            <textarea name="" id="text" cols="30" rows="10" placeholder="仅管理员可以发布"></textarea>
+            <button id="blogs_submit_btn" class="btn-block btn-danger" style="height: 50px;margin: 20px;margin-left: -3px;" disabled>EVENTS</button>
+        </div>
+            <div class="col-md-12" id="blogs">
+
+			<div class="panel panel-default panel-success" id="blogs-panel">
+
+				<div class="panel-heading">recent EVENTS</div>
+				<table class="table table-striped">
+					<tr id="firstBlog">
+						<td><a href="https://www.baidu.com/" class="link">团支部大会指出，贯彻落实党中央的一切部署，坚持跟党走，护党风，坚持从群众中来，到群众中去</a></td>
+					</tr>
+
+				</table>
+				<div class="panel-footer"></div>
+			</div>
+		</div>
+
+    </div>
+
+    <br>
+
+    <footer style="position: relative;bottom:10px; ">@copyright 大学生艺术团表演部@Showi小冰</footer>
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/vue/2.6.11/vue.js"></script>
+	<script src="/static/js/main_events.js"></script>
+	<script src="/static/js/login.js"></script>
+</body>
+</html>
+

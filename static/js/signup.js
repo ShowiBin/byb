@@ -20,12 +20,13 @@ function checkSignUp(){
             url = '/serverSignUp?username="'+username+'"&pwd="'+
                 pwd+'"&name="'+name+'"&age="'+age+'"'
             $.post(url).done(function (nickname) {
+                console.log(nickname)
                 if (nickname.toString() == '0'||nickname == undefined){
                     alert('Server Error!')
                 }
                 else {
-                    alert('Welcome to JikeHub')
-                    $(location).prop('href','/home?nickname="'+nickname+'"')
+                    alert('Welcome to BiaoYanBu_Home')
+                    $(location).prop('href','/home?nickname='+nickname)
                 }
             })
         }

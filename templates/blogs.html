@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/static/css/login.css">
 	<link rel="stylesheet" media="(min-width:500px)" type="text/css" href="/static/css/my.css">
 	<link rel="stylesheet" media="(max-width:500px)" href="/static/css/my_mobile.css">
-	<title>JikeHub_Blogs</title>
+	<title>MESSAGE_BOARD</title>
     <style>
         #loginBtn,#singUpBtn{
             margin-top: 20px;
@@ -17,7 +17,7 @@
         }
         #text{
             width: 100%;
-            height: 500px;
+            height: 200px;
             background-color: transparent;
             color: antiquewhite;
             font-size: medium;
@@ -30,6 +30,13 @@
             font-size: medium;
 
         }
+        #logoImg{
+            width: 100px;
+            height: auto;
+        }
+        td{
+            max-width:400px;
+        }
     </style>
 </head>
 <body>
@@ -37,7 +44,7 @@
         <div class="navbar navbar-inverse">
             <div class="navbar-header">
                 <a href="/home" class="">
-                    <img src="/static/images/logo.jpg" alt="">
+                    <img src="/static/images/logo.jpg" alt="" id="logoImg" >
                 </a>
 
 				<button id="menu">MENU</button>
@@ -47,45 +54,42 @@
 				<label for="toggle" id="toggleText">MENU</label>
 				<input type="checkbox" id="toggle"> -->
 				<ul class="nav navbar-nav navbar-left" id="basic_links">
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">APPS</a></li>
-					<li><a href="#">BLOGS</a></li>
-					<li><a href="#">NEWS</a></li>
-					<li><a href="#">PROFUCTS</a></li>
+					<li><a href="/home">HOME</a></li>
+					<li><a href="/events">EVENTS</a></li>
+					<li id=""><a href='/blogs' class="btn-href" id="blogs_href">MESSAGE_BOARD</a></li>
+					<li><a href="/products">PRODUCTS</a></li>
+					<li><a href="/showus">SHOWUS</a></li>
+					<li><a href="/DM">DM</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">LEARN MORE</a></li>
+					<li><a href="/about">ABOUT</a></li>
+					<li><a href="/learn_more">LEARN MORE</a></li>
 					<li><a href="/login" id="loginIcon">LOGIN</a></li>
+                    <div id="sb"></div>
 				</ul>
 			</div>
 
         </div>
     </div>
     <div class="container blogs">
-        <button id="textaeraToggle" style="border: 0;background-color: transparent;
+        <button id="textaeraToggle" style="margin-left:15px;border: 0;background-color: transparent;
         color: antiquewhite;
-        font-size: 70px;">Writing My Blog</button>
+        font-size: 70px;">Writing My MESSAGE</button>
         <div class="container " id="head">
-            <textarea name="" id="headText" cols="30" rows="10" >writing the title here</textarea>
+            <p name="" id="headText" style="font-size: 50px;color: aqua">请先登录</p>
         </div>
         <div class="container " id="textarea">
-            <textarea name="" id="text" cols="30" rows="10" >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi impedit quaerat suscipit temporibus veniam. Dolores dolorum ea expedita illo natus officia! Dolorum fugiat laboriosam magni mollitia quasi reiciendis repellendus temporibus.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi impedit quaerat suscipit temporibus veniam. Dolores dolorum ea expedita illo natus officia! Dolorum fugiat laboriosam magni mollitia quasi reiciendis repellendus temporibus.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi impedit quaerat suscipit temporibus veniam. Dolores dolorum ea expedita illo natus officia! Dolorum fugiat laboriosam magni mollitia quasi reiciendis repellendus temporibus.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi impedit quaerat suscipit temporibus veniam. Dolores dolorum ea expedita illo natus officia! Dolorum fugiat laboriosam magni mollitia quasi reiciendis repellendus temporibus.
-            </textarea>
-            <button id="blogs_submit_btn" class="btn-block btn-danger" style="height: 50px;margin: 20px;margin-left: -3px;">SUBMIT BLOGS</button>
+            <textarea name="" id="text" cols="30" rows="10" placeholder="请在此留言或者评论,发表需要先登录"></textarea>
+            <button id="blogs_submit_btn" class="btn-block btn-danger" style="height: 50px;margin: 20px;margin-left: -3px;" disabled>SUBMIT MESSAGE</button>
         </div>
             <div class="col-md-12" id="blogs">
 
 			<div class="panel panel-default panel-success" id="blogs-panel">
 
-				<div class="panel-heading">hot blogs</div>
+				<div class="panel-heading">hot MESSAGE</div>
 				<table class="table table-striped">
 					<tr id="firstBlog">
-						<td><a href="https://www.baidu.com/" class="link">小鸡鸡的致富之道</a></td>
+						<td><a href="https://www.baidu.com/" class="link">艺术团的致富之道</a></td>
 					</tr>
 
 				</table>
@@ -96,7 +100,9 @@
     </div>
 
     <br>
-    <footer style="position: relative;bottom:10px; ">@copyright 机客公会@Showi小冰</footer>
+    <a id="homeWelcome" href="/welcome" style="font-size: 30px;float: right;">加入我们</a>
+
+    <footer style="position: relative;bottom:10px; ">@copyright 大学生艺术团表演部@Showi小冰</footer>
 		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
 	<script src="https://cdn.bootcss.com/vue/2.6.11/vue.js"></script>
 	<script src="/static/js/main_blogs.js"></script>

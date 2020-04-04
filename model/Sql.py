@@ -91,21 +91,3 @@ class SqlOp():
         sql = 'select * from '+table_name+' where '+condition
         print('#[model.Sql.SqlOp.select]',sql)
         return self.runSql(sql)
-
-# s = SqlOp()
-#
-# s.insert('USER',{'ID':'631862020224','NAME':'Showi','YEAR':'2018','PWD':'Showi666','CONMENTS':'管理员'})
-# # s.update('USER','NAME','Showi'," ID = '631862020224'")
-# s.delete('USER','ID = 22')
-# print(s.select('USER'))
-
-
-
-# s = SqlOp()
-# s.runSql('''create table USER(
-# ID TEXT NOT NULL ,
-# NAME TEXT NOT NULL,
-# PWD TEXT NOT NULL,
-# YEAR TEXT NOT NULL,
-# CONMENTS TEXT)
-# ''')

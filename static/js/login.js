@@ -38,6 +38,18 @@ function checkAndLogin() {
 }
 
 
+ad_Timer = 0
+setInterval(function () {
+    if(ad_Timer%2 == 0){
+        $('#homeWelcome').hide();
+    }
+    else {
+        $('#homeWelcome').show();
+    }
+    ad_Timer++;
+},500)
+
+
 
 //main
 

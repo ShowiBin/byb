@@ -21,7 +21,7 @@ body{
 	color: white;
 }
 a{
-	color: gray;
+	color: #222222;
 	text-decoration: none;
 	transition: 0.5s;
 }
@@ -29,26 +29,8 @@ a:hover{
 	background-color: gray;
 	color: white;
 }
-#apps{
-	/*background-color: purple;*/
-	/*height: 400px;*/
-}
 
-.showAPP{
-	background-color: transparent;
-	width: 50%;
-	margin-bottom: 20px;
-	display: inline-block;
-}
-.showAPP:hover{
-	background-color: transparent;
-}
 
-.appImg{
-	margin: 10px;
-	height: 80px;
-	width: 80px;
-}
 .desOnimg{
 	margin-top: -10px;
 	margin-left: 10px;
@@ -86,6 +68,27 @@ footer{
 /*	color: #e29797;*/
 
 /*}*/
+
+.navImg{
+
+	width: 100%;
+}
+#logoImg{
+	width: 100px;
+	height: auto;
+}
+#homeSentence{
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	font-size:30px;
+	font-weight: bold;
+	color: aliceblue;
+}
+#homeWelcome{
+	margin-right:60px;
+}
+
 footer{
-	color: gray;
+	color: #414141;
 }

@@ -20,7 +20,7 @@ function set_data(obj){
 	b_data = eval(obj)
 	for(i in b_data){
 		var cont = '<tr>\n' +
-					'<td><a href="'+b_data[i].links+'" class="link"><h4>'+b_data[i].content+'</h4></a><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet enim iure natus quos suscipit totam ull</td>\n' +
+					'<td style="width: 100%;color: #e29797;\n"><h3>'+b_data[i][1]+':</h3><br>'+b_data[i][2]+'</td>\n' +
 			'</tr>'
 		$('#firstBlog').after(cont)
 
@@ -41,6 +41,8 @@ if (paras){
 	//hide login btn
 	$('#loginIcon').attr('href','/userPage')
 	$('#loginIcon').text(nickname)
+	$('#blogs_submit_btn').attr('disabled',false)
+	$('#headText').text(nickname)
 	//
 	// userLink = `
 	// 				<li><a href="/userPage" id="userHead">`+nickname+`</a></li>
@@ -54,22 +56,19 @@ if (paras){
 //submit blogs
 $('#blogs_submit_btn').click(function () {
 	console.log('clicked')
-	title = $('#headText').val()
+	title = $('#headText').text()
+	console.log(title)
 	con = $('#text').val()
 	console.log(con)
 	url = '/submit_blogs?title="'+title+'"&con="'+con+'"'
 	$.post(url).done(function (res) {
-		console.log('aquared')
 
 		if(res == '1'){
 			links = '/sorry'
 			alert('Submit success')
 			// console.log(content)
-			var cont = '<tr>\n' +
-					'<td><a href="'+links+'" class="link"><h4>'+title+'</h4></a><br>con</td>\n' +con
-			'</tr>'
-			$('#firstBlog').after(cont)
-			// get_blogs_data()
+			$(location).prop('href','/blogs?nickname='+nickname)
+
 		}
 		else {
 			alert('Submit failed')

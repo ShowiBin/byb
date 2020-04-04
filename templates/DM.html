@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" media="(min-width:500px)" type="text/css" href="/static/css/my.css">
+	<link rel="stylesheet" media="(max-width:500px)" href="/static/css/my_mobile.css">
+	<title>部门管理系统 --department manager</title>
+
+</head>
+<body style="color: indianred">
+{#<canvas id="cas"></canvas>#}
+<div class="all" id="all">
+
+	<div class="container">
+		<div class="navbar navbar-inverse" id="nav">
+			<div class="navbar-header">
+				<a href="/home" class="">
+					<img id="logoImg" src="/static/images/logo.jpg">
+				</a>
+				<button id="menu">MENU</button>
+			</div>
+			<div id="links"><!--
+				<label for="toggle" id="toggleText">MENU</label>
+				<input type="checkbox" id="toggle"> -->
+				<ul class="nav navbar-nav navbar-left" id="basic_links">
+					<li><a href="/home">HOME</a></li>
+					<li><a href="/events">EVENTS</a></li>
+					<li id=""><a href='/blogs' class="btn-href" id="blogs_href">MESSAGE_BOARD</a></li>
+					<li><a href="/products">PRODUCTS</a></li>
+					<li><a href="/showus">SHOWUS</a></li>
+					<li><a href="/DM">DM</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/about">ABOUT</a></li>
+					<li><a href="/learn_more">LEARN MORE</a></li>
+					<li><a href="/login" id="loginIcon">LOGIN</a></li>
+                    <div id="sb"></div>
+				</ul>
+			</div>
+
+
+		</div>
+	</div>
+     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <embed wmode="transparent" src="/static/flash/01.swf" quality="high" bgcolor="#FDF6E3"  name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">    </div>
+{#<embed wmode="transparent" src="https://files.cnblogs.com/files/jingmoxukong/honehone_clock_tr.swf" quality="high" bgcolor="#FDF6E3" width="240" height="110" name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">#}
+{{ nickname }}
+    <div id="parts" class="col-md-10 " style="display: inline-block;">
+        <h2>19届成员</h2><a href="/welcome" style="float:right;text-decoration: none;color: aquamarine;font-size: 30px;">加入我们</a>
+        <div>
+            <table class="table table-hover">
+  <thead>
+    <tr>
+      <th>名字</th>
+      <th>学院</th>
+      <th>更多</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>张中一</td>
+      <td>土木工程学院</td>
+      <td>无</td>
+    </tr>
+    <tr>
+      <td>周悦</td>
+      <td>经济与管理学院</td>
+      <td>无</td>
+    </tr>
+    <tr>
+      <td>熊子璇</td>
+      <td>交通运输学院</td>
+      <td>无</td>
+    </tr>
+    <tr>
+      <td>吴佳豪</td>
+      <td>信息科学与工程学院</td>
+      <td>无</td>
+    </tr>
+    <tr>
+      <td>唐雪萍 </td>
+      <td>建筑与城市规划学院</td>
+      <td>无</td>
+    </tr>
+    <tr>
+      <td>王莹</td>
+      <td>经济与管理学院</td>
+      <td>无</td>
+    </tr>
+    <tr>
+      <td>周积鑫</td>
+      <td>航空学院</td>
+      <td>无</td>
+    </tr>
+    <tr>
+      <td>杨怡</td>
+      <td>经济与管理学院</td>
+      <td>无</td>
+    </tr>
+    <tr>
+      <td>刘茜</td>
+      <td>数学与统计学院</td>
+      <td>无</td>
+    </tr>
+    <tr>
+      <td>赵回</td>
+      <td>经管学院</td>
+      <td>无</td>
+    </tr>
+    <tr>
+      <td>胡天宇 </td>
+      <td>航运与船舶学院 </td>
+      <td>无</td>
+    </tr>
+    <tr>
+      <td>徐文轩</td>
+      <td>土木工程学院</td>
+      <td>无</td>
+    </tr>
+    <tr>
+      <td>司晨雨</td>
+      <td>经济与管理学院</td>
+      <td>无</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+    </div>
+
+    <div id="chuqing" class="col-md-12">
+        <h2>出勤</h2><br>
+        <div>
+            <table class="table table-hover">
+                <thead>
+                    <th>考勤时间</th>
+                    <th>张中一</th>
+                    <th>周悦</th>
+                    <th>熊子璇</th>
+                    <th>吴佳豪</th>
+                    <th>唐雪萍</th>
+                    <th>王莹</th>
+                    <th>周积鑫</th>
+                    <th>杨怡</th>
+                    <th>刘茜</th>
+                    <th>赵回</th>
+                    <th>胡天宇 </th>
+                    <th>徐文轩</th>
+                    <th>司晨雨</th>
+                </thead>
+                <tbody>
+                    <tr id="first_row_data">
+                        <td>-1</td>
+                        <td>缺席</td>
+                        <td>缺席</td>
+                        <td>缺席</td>
+                        <td>缺席</td>
+                        <td>缺席</td>
+                        <td>缺席</td>
+                        <td>缺席</td>
+                        <td>缺席</td>
+                        <td>缺席</td>
+                        <td>缺席</td>
+                        <td>缺席</td>
+                        <td>缺席</td>
+                        <td>缺席</td>
+                     </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+     <div id="money" class="col-md-12">
+        <h2>经费管理</h2><br>
+        <div>
+            <table class="table table-hover">
+                <thead>
+                    <th>id</th>
+                    <th>时间</th>
+                    <th>缘由</th>
+                    <th>使用人</th>
+                    <th>变动信息</th>
+                    <th>剩余</th>
+                    <th>附加信息</th>
+
+                </thead>
+                <tbody>
+{#                    <div id="first_row_data_money"></div>#}
+                    <tr id="first_row_data_money">
+                        <td>-1</td>
+                        <td>1949.10.01</td>
+                        <td>献身国防</td>
+                        <td>所有成员</td>
+                        <td>-100</td>
+                        <td>0</td>
+                        <td>无</td>
+                     </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+{#	<footer style="display: block">@copyright 大学生艺术团表演部@Showi小冰</footer>#}
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/vue/2.6.11/vue.js"></script>
+	<script src="/static/js/main.js"></script>
+    <script src="/static/js/dm.js"></script>
+
+{#    <script type="text/javascript" src="/static/js/lzxg.js"></script>#}
+
+<script>
+    //home sentence
+home_sentense_timer = 0
+nowSentence = ''
+$('#homeSentence').text('大学生艺术团表演部欢迎您')
+
+sentence = ['Welcome',' ','To',' ','BioaYanBu',' ','Home']
+function home_sentence_show(){
+
+    console.log(home_sentense_timer)
+    if (home_sentense_timer < 7){
+        nowSentence +=sentence[home_sentense_timer]
+    }
+    else if(home_sentense_timer%7 == 0){
+        nowSentence = 'Welcome'
+    }
+    else{
+        nowSentence +=sentence[home_sentense_timer%7]
+    }
+    $('#homeSentence').text(nowSentence)
+    // setTimeout(home_sentence_show,500)
+    home_sentense_timer+=1
+
+}
+
+var lala = function(){
+    setInterval(home_sentence_show,500)
+}
+setTimeout(lala,2000)
+
+
+</script>
+</body>
+</html>

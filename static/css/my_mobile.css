@@ -22,18 +22,7 @@ a:hover{/*
 	background-color: gray;*/
 	color: white;
 }
-#apps{
-	/*background-color: purple;*/
-	/*height: 400px;*/
-}
 
-.showAPP{
-	background-color: rgba(0,0,0,0);
-	width: 25%;
-	height:50px;
-	margin: 8px;
-	display: inline-block;
-}
 footer{
 	text-align:center;
 
@@ -95,11 +84,8 @@ embed{
 	display: none;
 }
 
-.appImg{
-	margin: 10px;
-	margin-left: -10px;
-	height: 50px;
-	width: 50px;
+.navImg_mobile{
+	width: 100%;
 }
 .desOnimg{
 	margin-top: 10px;
@@ -110,4 +96,22 @@ embed{
 	border-radius: 50px;
 	width: 80%;
 }
+#logoImg{
+	width: 100px;
+	height: auto;
+}
+#homeSentence{
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	font-size:20px;
+	/*font-weight: bold;*/
+	color: aliceblue;
+}
 
+#homeWelcome{
+	position: absolute;
+	top: 70%;
+
+	right:0%;
+}

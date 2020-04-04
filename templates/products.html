@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/login.css">
+	<link rel="stylesheet" media="(min-width:500px)" type="text/css" href="/static/css/my.css">
+	<link rel="stylesheet" media="(max-width:500px)" href="/static/css/my_mobile.css">
+	<title>LOGIN</title>
+    <style>
+        body{
+            color: antiquewhite;
+        }
+        #loginBtn,#singUpBtn{
+            margin-top: 20px;
+        }
+        input{
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <a href="/home" class="" >
+                    <img src="/static/images/logo.jpg" id="logoImg">
+                </a>
+				<button id="menu">MENU</button>
+
+            </div>
+            <div id="links"><!--
+				<label for="toggle" id="toggleText">MENU</label>
+				<input type="checkbox" id="toggle"> -->
+				<ul class="nav navbar-nav navbar-left" id="basic_links">
+					<li><a href="/home">HOME</a></li>
+					<li><a href="/events">EVENTS</a></li>
+					<li id=""><a href='/blogs' class="btn-href" id="blogs_href">MESSAGE_BOARD</a></li>
+					<li><a href="/products">PRODUCTS</a></li>
+					<li><a href="/showus">SHOWUS</a></li>
+					<li><a href="/DM">DM</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/about">ABOUT</a></li>
+					<li><a href="#">LEARN MORE</a></li>
+					<li><a href="/login" id="loginIcon">LOGIN</a></li>
+                    <div id="sb"></div>
+				</ul>
+			</div>
+
+        </div>
+    </div>
+
+    <img src="/static/images/qq_ice.jpg" alt="" id="navImg" style="float: right;">
+
+            <div class="col-md-6">
+                <h2 style="align-items: center" class="vidoeTitle" id="v1">kiki&chuchu</h2>
+                    <video width="100%" height="100%" controls="controls" id="kikiChuchu">
+                  <source src="/static/videos/kikiAndchuchu.mp4" type="video/mp4" />
+                  <source src="/static/videos/kikiAndchuchu.ogg" type="video/ogg" />
+                  <source src="/static/videos/kikiAndchuchu.webm" type="video/webm" />
+                  <object data="/static/videos/kikiAndchuchu.mp4" width="320" height="240">
+                    <embed src="/static/videos/kikiAndchuchu.swf" width="320" height="240" />
+                  </object>
+                </video>
+            </div>
+
+            <div class="col-md-6">
+                <h2 style="align-items: center" class="vidoeTitle" id="v2">白蛇前传</h2>
+                    <video width="100%" height="100%" controls="controls" id="baishe">
+                  <source src="/static/videos/baishe.mp4" type="video/mp4" />
+                  <source src="/static/videos/kikiAndchuchu.ogg" type="video/ogg" />
+                  <source src="/static/videos/kikiAndchuchu.webm" type="video/webm" />
+                  <object data="/static/videos/baishe.mp4" width="320" height="240">
+                    <embed src="/static/videos/kikiAndchuchu.swf" width="320" height="240" />
+                  </object>
+                </video>
+            </div>
+
+            <div class="col-md-12">
+                <h2 style="align-items: center" class="vidoeTitle" id="v3">小品:广告双子星</h2>
+                    <video width="100%" height="100%" controls="controls" id="Ad_bro">
+                  <source src="/static/videos/adBro.mp4" type="video/mp4" />
+                  <source src="/static/videos/adBro.ogg" type="video/ogg" />
+                  <source src="/static/videos/adBro.webm" type="video/webm" />
+                  <object data="/static/videos/adBro.mp4" width="320" height="240">
+                    <embed src="/static/videos/adBro.swf" width="320" height="240" />
+                  </object>
+                </video>
+            </div>
+            <div class="col-md-4">
+                <h2 style="align-items: center" class="vidoeTitle" id="v4">脱单联盟</h2>
+                    <video width="100%" height="100%" controls="controls" id="tuodan_league">
+                  <source src="/static/videos/tuodan.mp4" type="video/mp4" />
+                  <source src="/static/videos/tuodan.ogg" type="video/ogg" />
+                  <source src="/static/videos/tuodan.webm" type="video/webm" />
+                  <object data="/static/videos/tuodan.mp4" width="320" height="240">
+                    <embed src="/static/videos/tuodan.swf" width="320" height="240" />
+                  </object>
+                </video>
+            </div>
+            <br>
+            <div class="col-md-12">
+                <h2 style="align-items: center" class="vidoeTitle" id="v5">青春毕业日</h2>
+                    <video width="100%" height="100%" controls="controls" id="young">
+                  <source src="/static/videos/young.mp4" type="video/mp4" />
+                  <source src="/static/videos/young.ogg" type="video/ogg" />
+                  <source src="/static/videos/young.webm" type="video/webm" />
+                  <object data="/static/videos/young.mp4" width="320" height="240">
+                    <embed src="/static/videos/young.swf" width="320" height="240" />
+                  </object>
+                </video>
+            </div>
+
+    <footer >@copyright 大学生艺术团表演部@Showi小冰</footer>
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/vue/2.6.11/vue.js"></script>
+	<script src="/static/js/main_login.js"></script></body>
+	<script src="/static/js/login.js"></script></body>
+	<script src="/static/js/products.js"></script></body>
+
+<a id="" href="/welcome" style="font-size: 30px;float: right;">加入我们</a>
+
+
+</html>
